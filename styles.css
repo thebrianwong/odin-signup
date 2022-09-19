@@ -22,3 +22,18 @@
 img[src="assets/background-image.jpg"] {
     height: 100vh;
 }
+
+#odin-title,
+#image-credits {
+    position: absolute;
+    background-color: gray;
+    color: white;
+}
+
+#odin-title {
+    top: 20%;
+}
+
+#image-credits {
+    bottom: 2%;
+}
