@@ -2,3 +2,13 @@
     font-family: Norse-Bold;
     src: url(fonts/Norse-Bold.otf);
 }
+
+.container,
+.graphics {
+    display: flex;
+}
+
+.graphics,
+.contents {
+    flex-direction: column;
+}
