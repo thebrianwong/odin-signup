@@ -13,3 +13,12 @@
 .container-right {
     flex-direction: column;
 }
+
+.container-left {
+    /* width: 30%;
+    height: 100vh; */
+}
+
+img[src="assets/background-image.jpg"] {
+    height: 100vh;
+}
