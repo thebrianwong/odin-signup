@@ -4,11 +4,12 @@
 }
 
 .container,
-.graphics {
+.container-left,
+.container-right {
     display: flex;
 }
 
-.graphics,
-.contents {
+.container-left,
+.container-right {
     flex-direction: column;
 }
