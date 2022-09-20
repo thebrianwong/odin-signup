@@ -9,12 +9,14 @@
 
 .container,
 .container-left,
-.container-right {
+.container-right,
+.text-container {
     display: flex;
 }
 
 .container-left,
-.container-right {
+.container-right,
+.text-container {
     flex-direction: column;
 }
 
@@ -23,6 +25,11 @@
     height: 100vh; */
     margin-left: 100px;
     width: 30%;
+}
+
+.container-right {
+    justify-content: center;
+    margin-right: 100px;
 }
 
 img[src="assets/background-image.jpg"] {
@@ -67,4 +74,23 @@ img[src="assets/odin-lined.png"] {
 
 a {
     color: white;
+}
+
+.text-container {
+    marsgin: 0 500px 5px 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.text-container > p:nth-child(1) {
+    margin-bottom: 0px;
+    max-width: 650px;
+}
+
+.text-container > p:nth-child(2) {
+    margin-top: 0px;
+}
+
+.container-right > * {
+    margin-left: 50px;
 }
