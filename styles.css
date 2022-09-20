@@ -3,6 +3,10 @@
     src: url(fonts/Norse-Bold.otf);
 }
 
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
 .container,
 .container-left,
 .container-right {
