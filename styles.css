@@ -118,3 +118,7 @@ button[form="account-form"] {
     text-decoration: none;
     font-weight: 800;
 }
+
+form {
+    border: solid 1px gray;
+}
