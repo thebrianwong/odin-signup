@@ -46,7 +46,7 @@ img[src="assets/odin-lined.png"] {
     font-size: 7rem;
     top: 20%;
     height: 130px;
-    width: 30%;
+    width: inherit;
 }
 
 #logo-container p {
@@ -61,6 +61,7 @@ img[src="assets/odin-lined.png"] {
 
 #image-credits {
     bottom: 2%;
+    font-size: 0.85rem;
 }
 
 a {
