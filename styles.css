@@ -23,6 +23,10 @@ img[src="assets/background-image.jpg"] {
     height: 100vh;
 }
 
+img[src="assets/odin-lined.png"] {
+    margin: 5px 0;
+}
+
 #odin-title,
 #image-credits {
     position: absolute;
@@ -34,9 +38,9 @@ img[src="assets/background-image.jpg"] {
     display: flex;
     justify-content: center;
     font-family: Norse-Bold;
-    font-size: 5rem;
+    font-size: 7rem;
     top: 20%;
-    height: 100px;
+    height: 130px;
     width: 633.547px;
 }
 
