@@ -21,6 +21,7 @@
 .container-left {
     /* width: 30%;
     height: 100vh; */
+    margin-left: 100px;
     width: 30%;
 }
 
