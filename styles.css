@@ -21,6 +21,7 @@
 .container-left {
     /* width: 30%;
     height: 100vh; */
+    width: 30%;
 }
 
 img[src="assets/background-image.jpg"] {
@@ -31,13 +32,13 @@ img[src="assets/odin-lined.png"] {
     margin: 5px 0;
 }
 
-#odin-title,
+#logo-container,
 #image-credits {
     position: absolute;
     color: white;
 }
 
-#odin-title {
+#logo-container {
     display: flex;
     justify-content: center;
     background-color: rgba(15, 15, 15, 0.5);
@@ -45,12 +46,17 @@ img[src="assets/odin-lined.png"] {
     font-size: 7rem;
     top: 20%;
     height: 130px;
-    width: 633.547px;
+    width: 30%;
 }
 
-#odin-title p {
+#logo-container p {
     display: inline;
     margin: 0;
+}
+
+.credits-container {
+    display: flex;
+    justify-content: center;
 }
 
 #image-credits {
