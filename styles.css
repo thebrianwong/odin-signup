@@ -26,12 +26,23 @@ img[src="assets/background-image.jpg"] {
 #odin-title,
 #image-credits {
     position: absolute;
-    background-color: gray;
+    background-color: rgba(15, 15, 15, 0.5);
     color: white;
 }
 
 #odin-title {
+    display: flex;
+    justify-content: center;
+    font-family: Norse-Bold;
+    font-size: 5rem;
     top: 20%;
+    height: 100px;
+    width: 633.547px;
+}
+
+#odin-title p {
+    display: inline;
+    margin: 0;
 }
 
 #image-credits {
