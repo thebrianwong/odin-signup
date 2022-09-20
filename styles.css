@@ -121,4 +121,21 @@ button[form="account-form"] {
 
 form {
     border: solid 1px gray;
+    max-width: 650px;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    width: 175px;
+    margin: 0 25px;
+}
+
+label {
+    display: inline-block;
+    width: 175px;
+}
+
+input {
+    width: 175px;
 }
