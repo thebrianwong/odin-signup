@@ -124,18 +124,36 @@ form {
     max-width: 650px;
 }
 
+ul {
+    padding: 0;
+}
+
 li {
     display: inline-block;
     list-style: none;
     width: 175px;
-    margin: 0 25px;
+    /* margin: 0 25px; */
+    margin-right: 140px;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 label {
     display: inline-block;
+    font-size: .90rem;
     width: 175px;
 }
 
 input {
-    width: 175px;
+    height: 22.5px;
+    width: 240px;
+    margin-bottom: 20px;
+}
+
+input,
+button {
+    appearance: none;
 }
