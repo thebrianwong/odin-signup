@@ -63,6 +63,7 @@ img[src="assets/odin-lined.png"] {
 #logo-container p {
     display: inline;
     margin: 0;
+    overflow: hidden;
 }
 
 .credits-container {
