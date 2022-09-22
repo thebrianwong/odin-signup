@@ -37,6 +37,7 @@ img[src="assets/background-image.jpg"] {
     height: 100vh;
     position: sticky;
     top: 0;
+    object-fit: cover;
 }
 
 img[src="assets/odin-lined.png"] {
@@ -170,4 +171,29 @@ input {
 input,
 button {
     appearance: none;
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-flow: column wrap;
+    }
+    .container-left {
+        width: auto;
+    }
+    #logo-container {
+        width: 100vw;
+    }
+    img[src="assets/background-image.jpg"] {
+        width: 100vw;
+    }
+    #logo-container,
+    #image-credits {
+        position: absolute;
+    }
+    .form-background {
+        width: 100vw;
+    }
+    li {
+        display: block;
+    }
 }
