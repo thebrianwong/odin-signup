@@ -35,6 +35,8 @@
 
 img[src="assets/background-image.jpg"] {
     height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 img[src="assets/odin-lined.png"] {
@@ -43,7 +45,7 @@ img[src="assets/odin-lined.png"] {
 
 #logo-container,
 #image-credits {
-    position: absolute;
+    position: fixed;
     color: white;
 }
 
