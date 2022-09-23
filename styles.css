@@ -196,9 +196,11 @@ button {
     }
     #logo-container {
         width: 100vw;
+        max-width: 100%;
     }
     img[src="assets/background-image.jpg"] {
         width: 100vw;
+        max-width: 100%;
     }
     #logo-container,
     #image-credits {
@@ -206,8 +208,12 @@ button {
     }
     .form-background {
         width: 100vw;
+        max-width: 100%;
     }
     li {
         display: block;
+    }
+    input {
+        width: 50vw;
     }
 }
