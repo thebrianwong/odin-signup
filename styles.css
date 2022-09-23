@@ -190,9 +190,14 @@ button {
 @media (max-width: 800px) {
     .container {
         flex-flow: column wrap;
+        align-items: center;
     }
     .container-left {
         width: auto;
+    }
+    .container-right {
+        width: 100vw;
+        max-width: 100%;
     }
     #logo-container {
         width: 100vw;
@@ -210,10 +215,33 @@ button {
         width: 100vw;
         max-width: 100%;
     }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     li {
         display: block;
     }
     input {
         width: 50vw;
+    }
+    .container-right > * {
+        padding-left: 0;
+    }
+    .container-right p {
+        text-align: center;
+    }
+    .text-container,
+    .account-container {
+        padding: 0 50px 0;
+    }
+    .account-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .account-container p {
+        display: grid;
     }
 }
