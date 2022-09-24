@@ -133,6 +133,10 @@ button[form="account-form"] {
     margin-bottom: 30px;
 }
 
+form {
+    max-width: 650px;
+}
+
 ul {
     padding: 0;
 }
@@ -222,10 +226,10 @@ button {
     li {
         display: block;
         margin-right: 0;
-        width: 100%;
+        width: calc(100% - 5px);
     }
     input {
-        width: auto;
+        width: 100%;
     }
     .container-right > * {
         padding-left: 0;
