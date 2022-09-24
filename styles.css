@@ -154,7 +154,8 @@ input:focus {
     outline: solid 2px red;
 }
 
-#error-message {
+#error-message,
+.account-container p:nth-child(2) {
     color: red;
     visibility: hidden;
     font-size: 0.75rem;
@@ -164,8 +165,12 @@ input:focus {
     padding: 0 50px 50px;
 }
 
-.account-container p {
+.account-container p:nth-child(3) {
     font-size: 1.25rem;
+}
+
+.account-container p:nth-child(2) {
+    margin: 10px 0;
 }
 
 .account-container a {
@@ -183,7 +188,6 @@ button[form="account-form"] {
     border-radius: 5px;
     font-weight: 600;
     height: 45px;
-    margin-bottom: 20px;
     width: 230px;
     box-shadow: 1px 3px 5px lightgray;
 }

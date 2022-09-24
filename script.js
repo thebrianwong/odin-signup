@@ -18,4 +18,12 @@ const checkPasswords = (password, passwordConfirm, errorMessage) => {
     }
 }
 
+const addSubmitCheck = () => {
+    submitButton = document.querySelector("button");
+    submitButton.addEventListener("click", () => {
+
+    })
+}
+
 addPasswordsCheck();
+addSubmitCheck();
