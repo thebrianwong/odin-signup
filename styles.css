@@ -189,8 +189,8 @@ button[form="account-form"] {
 
     .content-container,
     .logo-container {
-        width: 100vw;
         max-width: 100%;
+        width: 100vw;
     }
 
     img[src="assets/background-image.jpg"] {
@@ -236,9 +236,10 @@ button[form="account-form"] {
     }
 
     .account-container {
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        margin-bottom: 25px;
     }
 
     .account-container p {
