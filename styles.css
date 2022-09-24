@@ -64,7 +64,6 @@ img[src="assets/odin-lined.png"] {
 }
 
 .logo-container p {
-    display: inline;
     overflow: hidden;
     margin: 0;
 }
@@ -182,7 +181,6 @@ button[form="account-form"] {
 @media (max-width: 800px) {
     .container {
         flex-flow: column wrap;
-        align-items: center;
     }
 
     .graphics-container {
@@ -196,7 +194,6 @@ button[form="account-form"] {
     }
 
     img[src="assets/background-image.jpg"] {
-        width: 100vw;
         max-width: 100%;
     }
 
@@ -205,8 +202,16 @@ button[form="account-form"] {
         position: absolute;
     }
 
+    .text-container,
+    .account-container {
+        padding: 0 50px 0 50px;
+    }
+
+    .content-container p {
+        text-align: center;
+    }
+
     .form-background {
-        max-width: 100%;
         margin: 0 50px 30px;
         padding: 0;
     }
@@ -222,26 +227,12 @@ button[form="account-form"] {
     }
 
     li {
-        display: block;
         margin-right: 0;
         width: calc(100% - 5px);
     }
 
     input {
         width: 100%;
-    }
-
-    .content-container > * {
-        padding-left: 0;
-    }
-
-    .content-container p {
-        text-align: center;
-    }
-    
-    .text-container,
-    .account-container {
-        padding: 0 50px 0;
     }
 
     .account-container {
