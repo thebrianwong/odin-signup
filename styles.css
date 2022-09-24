@@ -5,6 +5,7 @@
 
 :root {
     font-family: 'Roboto', sans-serif;
+    background-color: #f9fafc;
 }
 
 .container,
@@ -137,6 +138,7 @@ button[form="account-form"] {
 
 form {
     max-width: 650px;
+    background-color: white;
 }
 
 ul {
