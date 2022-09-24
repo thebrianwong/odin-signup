@@ -154,6 +154,12 @@ input:focus {
     outline: solid 2px red;
 }
 
+#error-message {
+    color: red;
+    visibility: hidden;
+    font-size: 0.75rem;
+}
+
 .account-container {
     padding: 0 50px 50px;
 }
