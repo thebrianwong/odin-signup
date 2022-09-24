@@ -154,8 +154,8 @@ input:focus {
     outline: solid 2px red;
 }
 
-#error-message,
-.account-container p:nth-child(2) {
+#password-message,
+#button-message {
     color: red;
     visibility: hidden;
     font-size: 0.75rem;
@@ -169,7 +169,7 @@ input:focus {
     font-size: 1.25rem;
 }
 
-.account-container p:nth-child(2) {
+#button-message {
     margin: 10px 0;
 }
 
