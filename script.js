@@ -61,8 +61,8 @@ const resetMessages = (password, passwordConfirm, passwordMessage) => {
 const addSubmitCheck = () => {
     const submitButton = document.querySelector("button");
     const submitMessage = document.querySelector("#button-message");
-    const  password = document.querySelector("#password");
-    const  passwordConfirm = document.querySelector("#confirm-password");
+    const password = document.querySelector("#password");
+    const passwordConfirm = document.querySelector("#confirm-password");
     submitButton.addEventListener("click", (event) => {
         if (passwordConfirm.value !== password.value) {
             submitMessage.style.visibility = "visible";
