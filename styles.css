@@ -154,6 +154,10 @@ input:focus {
     outline: solid 2px red;
 }
 
+.password-match {
+    outline: solid 2px green;
+}
+
 #password-message,
 #button-message {
     color: red;
