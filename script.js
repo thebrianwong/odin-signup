@@ -1,7 +1,7 @@
 const addPasswordsCheck = () => {
-    password = document.querySelector("#password");
-    passwordConfirm = document.querySelector("#confirm-password");
-    passwordMessage = document.querySelector("#password-message");
+    const password = document.querySelector("#password");
+    const passwordConfirm = document.querySelector("#confirm-password");
+    const passwordMessage = document.querySelector("#password-message");
     password.addEventListener("blur", checkPassword.bind(this, password, passwordConfirm, passwordMessage));
     password.addEventListener("keyup", checkPassword.bind(this, password, passwordConfirm, passwordMessage));
     passwordConfirm.addEventListener("blur", checkPasswordConfirm.bind(this, password, passwordConfirm, passwordMessage));
@@ -46,7 +46,7 @@ const addConfirmationMessages = (password, passwordConfirm, passwordMessage) => 
     passwordMessage.textContent = "\u2713 Passwords match!";
     passwordMessage.style.color = "Green";
     passwordMessage.style.visibility = "visible";
-    submitMessage = document.querySelector("#button-message");
+    const submitMessage = document.querySelector("#button-message");
     submitMessage.style.visibility = "hidden";
 }
 
@@ -59,10 +59,10 @@ const resetMessages = (password, passwordConfirm, passwordMessage) => {
 }
 
 const addSubmitCheck = () => {
-    submitButton = document.querySelector("button");
-    submitMessage = document.querySelector("#button-message");
-    password = document.querySelector("#password");
-    passwordConfirm = document.querySelector("#confirm-password");
+    const submitButton = document.querySelector("button");
+    const submitMessage = document.querySelector("#button-message");
+    const  password = document.querySelector("#password");
+    const  passwordConfirm = document.querySelector("#confirm-password");
     submitButton.addEventListener("click", (event) => {
         if (passwordConfirm.value !== password.value) {
             submitMessage.style.visibility = "visible";
