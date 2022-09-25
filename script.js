@@ -2,12 +2,15 @@ const addPasswordsCheck = () => {
     const password = document.querySelector("#password");
     const passwordConfirm = document.querySelector("#confirm-password");
     const passwordMessage = document.querySelector("#password-message");
+    // Checks and updates both when you click off and as you type.
     password.addEventListener("blur", checkPassword.bind(this, password, passwordConfirm, passwordMessage));
     password.addEventListener("keyup", checkPassword.bind(this, password, passwordConfirm, passwordMessage));
     passwordConfirm.addEventListener("blur", checkPasswordConfirm.bind(this, password, passwordConfirm, passwordMessage));
     passwordConfirm.addEventListener("keyup", checkPasswordConfirm.bind(this, password, passwordConfirm, passwordMessage));
 }
 
+/* The only purpose of having 2 versions of these checks is so that you aren't notified of passwords not matching
+when you haven't even started typing into the Confirm Password field yet. */
 const checkPassword = (password, passwordConfirm, passwordMessage) => {
     if (passwordConfirm.value === "" && password.value === "") {
         resetMessages(password, passwordConfirm, passwordMessage);
@@ -50,6 +53,7 @@ const addConfirmationMessages = (password, passwordConfirm, passwordMessage) => 
     submitMessage.style.visibility = "hidden";
 }
 
+// Removes all messages and indications if you delete all entered password values.
 const resetMessages = (password, passwordConfirm, passwordMessage) => {
     password.classList.remove("password-match");
     passwordConfirm.classList.remove("password-match")
@@ -58,6 +62,7 @@ const resetMessages = (password, passwordConfirm, passwordMessage) => {
     passwordMessage.style.visibility = "hidden";
 }
 
+// Displays an error message and prevents submission if you try to submit when passwords do not match.
 const addSubmitCheck = () => {
     const submitButton = document.querySelector("button");
     const submitMessage = document.querySelector("#button-message");
