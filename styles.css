@@ -157,7 +157,6 @@ input:focus {
 #password-message,
 #button-message {
     color: red;
-    text-align: center;
     visibility: hidden;
     font-size: 0.75rem;
 }
