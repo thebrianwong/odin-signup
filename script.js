@@ -1,8 +1,8 @@
+// Checks and updates both when you click off and as you type.
 const addPasswordsCheck = () => {
     const password = document.querySelector("#password");
     const passwordConfirm = document.querySelector("#confirm-password");
     const passwordMessage = document.querySelector("#password-message");
-    // Checks and updates both when you click off and as you type.
     password.addEventListener("blur", checkPassword.bind(this, password, passwordConfirm, passwordMessage));
     password.addEventListener("keyup", checkPassword.bind(this, password, passwordConfirm, passwordMessage));
     passwordConfirm.addEventListener("blur", checkPasswordConfirm.bind(this, password, passwordConfirm, passwordMessage));
